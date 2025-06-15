@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tebak Nama Hewan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Tebak Nama Hewan</h1>
+  <div class="game-container">
+    <div id="question">Memuat soal...</div>
+    <input type="text" id="answerInput" placeholder="Ketik jawaban di sini" />
+    <button onclick="checkAnswer()">Cek Jawaban</button>
+    <div id="result"></div>
+    <div id="score">Skor: 0</div>
+    <div id="lives">Sisa Nyawa: 3</div>
+    <button onclick="restartGame()">Restart</button>
+  </div>
+
+  <script src="questions.js"></script>
+  <script src="script.js"></script>
+  <script src="confetti.js"></script>
+</body>
+</html>
